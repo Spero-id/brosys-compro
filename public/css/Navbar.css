@@ -1,0 +1,35 @@
+#Navbar{
+    position: fixed;
+    top: 20;
+    width: 100%;
+    background: none !important;
+    z-index: 9999;
+}
+.nav-item a p{
+    color: white;
+}
+
+.nav-active{
+    color: #ff0000; /* warna teks aktif */
+    background-color: #ffff;
+    border-radius: 10px;
+    font-weight: bold; /* tebal pada teks aktif */
+}
+.nav-active .mb-0{
+    color: #ff0000;
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}

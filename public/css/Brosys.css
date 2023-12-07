@@ -1,0 +1,460 @@
+h1{
+    font-size: calc(60% + 6vmin) !important;
+    margin-bottom: 0 !important;
+}
+h2{
+    font-size: calc(60% + 4vmin) !important;
+    margin-bottom: 0 !important;
+}
+h4{
+    font-size: calc(60% + 2vmin) !important;
+    margin-bottom: 0 !important;
+}
+p{
+    font-size: calc(60% + .75vmin) !important;
+    margin-bottom: 0 !important;
+}
+
+@font-face {
+    font-family: 'Aeromatic';
+    src: url('../images/Aero\ Matics\ Regular.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Changes';
+    src: url('../images/Changes.ttf') format('truetype');
+  }
+
+  
+* {
+    font-family: 'Aeromatic', sans-serif;
+  }
+
+
+  .tc{
+    font-family: 'Changes', sans-serif !important;
+  }
+
+.lineheader1{
+    margin-top: -5%;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+.page-brosys{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#brosys1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(.25);
+}
+.page-brosys-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+    text-align: center;
+}
+.page-brosys-desc p{
+    width: 80%;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+
+#sect-2 {
+    background-image: url('../images/AssetWeb01Crop.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
+.row-2{
+    padding: 5rem 0;
+}
+.column {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    height: 50vh ;
+  }
+  .content {
+    flex: 1;
+  }
+  
+  .column-content{
+    padding: 0 5rem;
+  }
+  .btn-column {
+    border-radius: 5px;
+    margin-left: 2.5rem;
+    background-color: white;
+    color: red;
+    padding: 0 1rem;
+    width: max-content;
+    margin-top: auto;
+    text-decoration: none;
+  }
+  .btn-column-2 {
+    border-radius: 5px;
+    margin-left: 2.5rem;
+    border: 1px solid white;
+    color: red;
+    padding: 0 1rem;
+    width: max-content;
+    margin-top: auto;
+    text-decoration: none;
+  }
+  .hr-text-bottom {
+    border-top: 2px solid red;
+    margin: 0;
+  }
+  .text-bottom{
+    position: absolute;
+    bottom: 25;
+    right: 0;
+    width: 60%;
+  }
+  .text-bottom-content{
+    color: white;
+    width: 100%;
+  }
+  .garis{
+    position: absolute;
+    bottom: 0;
+    left: 15;
+    transform: translateY(50%);
+    z-index: 3;
+  }
+
+
+  .page-brosys-desc-left{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: white !important;
+    text-align: start;
+}
+#svg4{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    position: absolute;
+    height: max-content;
+    top: 0;
+    right: 0;
+}
+#svg4 img:nth-child(1){
+    /* transform: translate(4.35%, 0); */
+    height: 100%;
+    width: 75%;
+    object-fit: contain;
+}
+#svg4 img:nth-child(2){
+    /* transform: translate(4.5%, -4.25%); */
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+#brosys-sect-3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(.25);
+}
+.perintilan{
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20;
+    left: 10;
+    z-index: 99;
+}
+.perintilan .col-7 p{
+    text-align: center;
+    color: white;
+}
+.hr-sect3 {
+    width: 100%;
+    border-top: 2px solid red;
+    margin: 0;
+  }
+  .perintilan .col-5{
+    display: flex;
+    justify-content: center;
+  }
+@media only screen and (max-width: 600px) {
+    .page-brosys-desc-left p{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #sect-3{
+        height: 50vh !important;
+    }
+    #brosys-sect-3{
+        height: 50vh;
+    }
+}
+
+
+
+#sect-4{
+    padding: 4rem;
+    background-color: rgb(58, 56, 56);
+}
+.title-sect-4{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.wrapper{
+    padding: 4rem;
+}
+#grid-4{
+    padding: 2.5rem;
+}
+.wrapper h2{
+    color: orangered;
+}
+#row-sect-4{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "col-1 col-1 col-1"
+        "col-2 col-3 col-4";
+    gap: 2rem;
+}
+.row-1{
+    grid-area: col-1;
+}
+.element-2{
+    padding: 0 !important;
+    grid-area: col-2;
+}
+.element-3{
+    padding: 0 !important;
+    grid-area: col-3;
+}
+.element-4{
+    padding: 0 !important;
+    grid-area: col-4;
+}
+.img-sect-4{
+    position: relative;
+    width: 50vw;
+}
+.img-sect-4-double{
+    position: relative;
+}
+.sect-4-label{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+}
+@media only screen and (max-width: 768px) {
+    .img-sect-4{
+        width: 100% !important;
+    }
+}
+
+#sect-5{
+    height: 75vh;
+}
+.hr-sect-5 {
+    width: 50vw;
+    border-top: 2px solid red;
+    margin: 0;
+  }
+.page-brosys-desc-5{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: white !important;
+    text-align: start;
+    width: 90%;
+}
+.list-event{
+    height: 100%;
+    width: 95%;
+}
+.slick-slide{
+    height: 100%;
+}
+.slick-active{
+    height: 100%;
+}
+.list-event img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+.list-event-text{
+    width: 90%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.list-event-text p{
+    line-height: 1;
+    width: 100%;
+}
+
+.slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: #000; /* Warna panah */
+    background-color: #fff; /* Warna latar panah */
+    border: 1px solid #000; /* Garis pinggir panah */
+    border-radius: 50%; /* Bentuk panah menjadi bulat */
+    padding: 10px; /* Ruang di dalam panah */
+    margin: 0 10px; /* Jarak antara panah dan slider */
+    cursor: pointer; /* Tanda kursor ketika diarahkan ke panah */
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #fff; /* Warna panah saat dihover */
+    background-color: #000; /* Warna latar panah saat dihover */
+  }
+
+#svg5{
+    position: absolute;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+}
+#svg5 img{
+    transform: translate(-7.6%, 3.75%);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#svg5-1{
+    text-align: end;
+    position: absolute;
+    height: 15%;
+    bottom: 10%;
+    right: 0;
+}
+#svg5-1 img{
+    height: 100%;
+    width: max-content;
+    object-fit: contain;
+}
+#svg5-2{
+    position: absolute;
+    height: 15%;
+    bottom: 25%;
+    left: 15%;
+}
+.box1{
+    width: 11.5vw;
+    height: 9vw;
+    background-color: red;
+}
+.box2{
+    transform: translateY(-10%);
+    width: 11.5vw;
+    height: 9vw;
+    background-color: red;
+}
+@media only screen and (max-width: 768px) {
+    #svg5-1{
+        height: 15%;
+        bottom: 2.5%;
+        right: 0;
+    }
+    #svg5-1 img{
+        transform: translate(0, 0);
+        height: 75%;
+        width: 75%;
+        object-fit: contain;
+    }
+}
+
+
+
+#brosys6{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sect-top{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.sect-bottom{
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    #row-sect-4{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "col-1 col-1"
+            "col-2 col-2"
+            "col-3 col-3"
+            "col-4 col-4";
+        gap: 2rem;
+    }
+    .wrapper{
+        padding: 1rem;
+    }
+    #grid-4{
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #sect-2{
+        height: max-content;
+    }
+    .btn-column{
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .column-content{
+        padding: 0 2rem;
+      }
+}
+
+@media only screen and (max-width: 1500px) {
+    .wrapper{
+        padding: 2rem;
+    }
+    #grid-4{
+        padding: 1rem;
+    }
+}
+
+/* @media only screen and (max-width: 1100px) {
+    #svg4{
+    position: absolute;
+    height: 75%;
+    top: 0; 
+    right: 0;
+}
+} */
